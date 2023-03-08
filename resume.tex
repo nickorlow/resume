@@ -1,0 +1,134 @@
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.3 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Nicholas Orlowsky} % Your name
+% You can merge both of these into a single line, if you do not have a website.
+\address{(512) 731-1307 \\ Austin, TX} 
+\address{\href{mailto:nickorlow@nickorlow.com}{nickorlow@nickorlow.com} \\ \href{https://www.linkedin.com/in/nicholas-orlowsky-83b24ab8}{linkedin.com/in/nicholas-orlowsky-83b24ab8} \\ \href{nickorlow.com}{nickorlow.com}}  %
+
+\begin{document}
+
+% %----------------------------------------------------------------------------------------
+% %	OBJECTIVE
+% %----------------------------------------------------------------------------------------
+\begin{rSection}{OBJECTIVE}
+{Motivated computer science student seeking a challenging internship opportunity to apply technical skills and gain hands-on experience in backend software development and site reliability engineering.}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Education}
+
+{\bf Bachelor of Computer Science}, The University of Texas at Austin \hfill {Expected 2025}\\
+Relevant Coursework: Data Structures, Discrete Mathematics, Algorithms \& Complexity, Principles of Operating
+Systems, Virtualization, Computer Networks, Data Management, Modern Web Applications
+
+
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% TECHINICAL STRENGTHS	
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{2ex}} l }
+Technical Skills & JavaScript, React, Python, Rust, C\#, Java, C, C++,  SQL, MongoDB, AWS, Docker, Kubernetes
+\\
+Soft Skills & Communication, Teamwork \& Collaboration, Problem-Solving, Adaptability, Attention to Detail\\
+\end{tabular}\\
+\end{rSection}
+
+\begin{rSection}{Experience}
+
+\textbf{Part-Time Contract Software Engineer} \hfill Mar 2021 -  Present\\
+Various Companies\hfill \textit{Remote}
+\begin{itemize}
+   \itemsep -3pt {} 
+   \item Contracted work with 4 companies working with team sizes of 1 - 15 to deliver high-quality software solutions within tight timelines and budget constraints.
+    \item Completed database migration of 15K+ users to Amazon Web Services without incident and minimal downtime
+    \item Added live-streaming feature to mobile app to support brand influencers. Capable of delivering live video with minimal latency to hundreds of
+          users. Developed using C\#, Cloudflare Stream, and React Native
+    \item Implemented design specifications in a frontend web application using Aurelia and JavaScript leading to a lower cart abandonment rate
+     leading to an estimated increase in sales of around 1.4\%
+\end{itemize}
+
+% Above combines the below 2 (+ some other contract work that I didn't have on my resume ebfore):
+
+% \textbf{Part-Time Software Engineer} \hfill Sep 2021 - Present\\
+% Comp Wallet Corp \hfill \textit{Remote}
+% \begin{itemize}
+%     \itemsep -3pt {} 
+%      \item Completed database migration of 15K+ users to Amazon Web Services without incident and minimal downtime
+%      \item Added live-streaming feature to support our brand influencers. Capable of delivering live video with minimal latency to hundreds of
+%      users. Developed using C\#, Cloudflare Stream, and React Native
+%       \item Architected and implemented an in-house advertising system that has created over 10,000 impressions utilizing AWS S3, Ruby on Rails,
+%       React Native, and Postgresql
+% \end{itemize}
+
+% \textbf{Part-Time Software Engineer} \hfill Mar 2021 - Sep 2021\\
+% Chicks Gold \hfill \textit{Remote}
+%  \begin{itemize}
+%     \itemsep -3pt {} 
+%      \item Successfully assisted team with a full frontend redesign and backend migration to .NET 5 in just 9 weeks
+%      \item Collaborated with a team of 12 engineers to build a .NET 5 web API that interacted with a MySQL database via Redis to support
+%      10,000+ active users
+%       \item Implemented design specifications in a frontend web application using Aurelia and JavaScript leading to a lower cart abandonment rate
+%       leading to an estimated increase in sales of around 1.4\%
+%   \end{itemize}
+
+\textbf{Software Engineer Intern} \hfill May 2022 - Aug 2022\\
+The Home Depot \hfill \textit{Atlanta, GA}
+ \begin{itemize}
+    \itemsep -3pt {} 
+     \item Developed functionality using React.js, Node.js, and Github CI/CD Pipelines for internal tooling saving 500+ engineering hours annually
+     \item Optimized the automotive section of the HomeDepot website. Removed unnecessary code, reducing Javascript sent to clients by ~10\%
+    \item Mentored newer co-workers to address programming issues and questions, speeding up their project timeline by approximately 7 days
+ \end{itemize}
+
+
+ 
+\textbf{Data Science Intern} \hfill Aug 2019 - Mar 2021\\
+Expedia Group \hfill \textit{Austin, TX}
+ \begin{itemize}
+    \itemsep -3pt {} 
+     \item Reduced offsite booking attempts via screening messages with an NLP model preventing \$200,000+ in lost revenue
+     \item Analyzed and labeled data using Python, Pandas, NumPy, Appen, and Jupyter notebook
+    \item Helped implement sentiment analysis NLP model to judge a property’s quality from reviews leading to better ranking that resulted in better search results leading to a higher booking rate
+
+ \end{itemize}
+
+\end{rSection} 
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{PROJECTS}
+\vspace{-1.25em}
+\item \textbf{Nick Web Services} {Geo-distributed 3 Dell servers across locations in Pennsylvania and Texas that load-balanced with each other using Linux, Kubernetes, and Proxmox. Maintained 100\% uptime for 2023 YTD \href{https://nws.nickorlow.com/}{(nws.nickorlow.com)}}
+\item \textbf{CavCash} { Created a payment processor like Venmo that connected to real banks through the ACH network using  C\#, .NET, MongoDB, SQL, React, React Native, and Microsoft Azure \href{https://cavcash.com/}{(cavcash.com)}}
+\end{rSection} 
+
+
+% Not sure below sections are needed/good use of space
+
+% %----------------------------------------------------------------------------------------
+% \begin{rSection}{Extra-Curricular Activities} 
+% \begin{itemize}
+%     \item 
+% \end{itemize}
+% \end{rSection}
+
+% %----------------------------------------------------------------------------------------
+% \begin{rSection}{Leadership} 
+% \begin{itemize}
+%     \item 
+% \end{itemize}
+% \end{rSection}
+
+
+\end{document}
