@@ -101,7 +101,7 @@ jobs:
           # Name of the tag for the release (will be associated with current branch)
           tag-name: ${{ steps.vnum.outputs.version_tag }}
           # File to release
-          file: Resume.pdf
+          file: resume.pdf
           asset-name: "resume-nickorlow.pdf"
 
       - name: GitHub Upload Release Artifacts
