@@ -16,9 +16,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Install fonts
-        run: sudo apt-get install -y texlive-fonts-recommended
-    
       - uses: paulhatch/semantic-version@v5.0.2
         id: vnum
         with:
@@ -56,11 +53,10 @@ jobs:
           release_name: Release ${{ steps.vnum.outputs.version_tag }}
           prerelease: false
 
-      - name: Compile Resume
-        uses: antaljanosbenjamin/compile-latex@v1.0.0
+      - name: Compile LaTeX document
+        uses: Sakul6499/GitHub-Action-LaTeX@v0.0.1
         with:
-          file: resume.tex
-          args: -pdf
+          latex_main_file: resume.tex
           
       - name: Upload Resume PDF as Build Artifact
         uses: actions/upload-artifact@v3.1.2
