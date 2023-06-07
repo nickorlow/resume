@@ -74,6 +74,14 @@ jobs:
           file: resume.pdf
           asset-name: "resume-nickorlow.pdf"
 
+      - name: Release Resume PDF
+        uses: djnicholson/release-action@v2.10
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag-name: latest
+          file: resume.pdf
+          asset-name: "resume-nickorlow.pdf"
+
       - name: GitHub Upload Release Artifacts
         uses: Roang-zero1/github-upload-release-artifacts-action@v3.0.0
         env:
