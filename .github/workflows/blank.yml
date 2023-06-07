@@ -53,10 +53,11 @@ jobs:
           release_name: Release ${{ steps.vnum.outputs.version_tag }}
           prerelease: false
 
-      - name: Compile LaTeX document
-        uses: Sakul6499/GitHub-Action-LaTeX@v0.0.1
+      - name: Compile Resume
+        uses: antaljanosbenjamin/compile-latex@v1.0.0
         with:
-          latex_main_file: resume.tex
+          file: resume.tex
+          args: -pdf
           
       - name: Upload Resume PDF as Build Artifact
         uses: actions/upload-artifact@v3.1.2
